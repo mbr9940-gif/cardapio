@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-#menu_items {
+.menu_items {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -18,32 +18,26 @@
 }
 
 @media screen and (min-width: 1171px) {
-    #menu_items {
+    .menu_items {
         grid-template-columns: repeat(4, 1fr);
         gap: 28px;
     }
 }
 
 
-.h_img {
-    width: 100px; 
+.h_img, .a_img, .b_img {
     max-width: 90%;     
     height: auto;
     object-fit: contain;
+    border-radius: 10px;
 }
 
-.a_img {
+.h_img, .a_img {
     width: 100px; 
-    max-width: 90%;     
-    height: auto;
-    object-fit: contain;
 }
 
 .b_img {
     width: 150px; 
-    max-width: 90%;     
-    height: auto;
-    object-fit: contain;
 }
 
 .example {
